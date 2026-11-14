@@ -1,0 +1,26 @@
+[package]
+name = "liuuid"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+authors = ["hypengw <hypengwip@gmail.com>"]
+
+[lib]
+name = "liuuid"
+module = "liuuid"
+archive = "liuuid"
+
+[profile.base]
+exceptions = false
+rtti = false
+
+[dependencies]
+rstd-std = { version = "0.1.11", pub = true }
+
+[dev-dependencies]
+rstd-test = { version = "0.1.11" }
+rstd-nostd = { version = "0.1.11", usage = "link" }
+
+[[test]]
+name = "liuuid-tests"
+sources = ["tests/main.cpp", "tests/uuid.cpp"]
+link-stdlib = false
