@@ -1,0 +1,9 @@
+<release version="0.1.0" date="2026-11-17">
+  <description>
+    <ul>
+      <li>Add UUID parsing and simple or hyphenated formatting.</li>
+      <li>Add UUID v4 generation using secure random bytes.</li>
+      <li>Add byte conversion, version and variant inspection, and rstd trait support.</li>
+    </ul>
+  </description>
+</release>
